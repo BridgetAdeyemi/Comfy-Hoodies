@@ -21,4 +21,4 @@ Comfy Hoodies is a simple e-commerce website built to display a collection of st
 - Navigate through different sections to explore the hoodie collections, read about the brand, and view ongoing sales.
 
 **Live Demo**     
-Checkout the live version of the project here
+Checkout the live version of the project here  https://bridgetadeyemi.github.io/Comfy-Hoodies/
