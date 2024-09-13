@@ -18,4 +18,7 @@ Comfy Hoodies is a simple e-commerce website built to display a collection of st
 **How to Use**
 - Clone or download the repository to your local machine.     
 - Open the index.html file in your web browser to view the website.      
-- Navigate through different sections to explore the hoodie collections, read about the brand, and view ongoing sales.    
+- Navigate through different sections to explore the hoodie collections, read about the brand, and view ongoing sales.
+
+**Live Demo**     
+Checkout the live version of the project here
