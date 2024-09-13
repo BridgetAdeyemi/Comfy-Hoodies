@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaquaries.css" />
+    <title>Comfrt Hoodies</title>
+  </head>
+  <body>
+    <!--header section which shows the discount -->
+    <header class="scrolling-container">
+      <p class="scrolling-text">
+        <span>A Hoodie sales | Up to 20% OFF</span>
+        <span>A Hoodie sales | Up to 20% OFF</span>
+        <span>A Hoodie sales | Up to 20% OFF</span>
+        <span>A Hoodie sales | Up to 20% OFF</span>
+        <span>A Hoodie sales | Up to 20% OFF</span>
+        <span>A Hoodie sales | Up to 20% OFF</span>
+        <span>A Hoodie sales | Up to 20% OFF</span>
+        <span>A Hoodie sales | Up to 20% OFF</span>
+        <span>A Hoodie sales | Up to 20% OFF</span>
+        <span>A Hoodie sales | Up to 20% OFF</span>
+        <span>A Hoodie sales | Up to 20% OFF</span>
+        <span>A Hoodie sales | Up to 20% OFF</span>
+      </p>
+    </header>
+    <!--end of header-->
+
+    <!--navbar section-->
+    <nav>
+      <div class="wrapper">
+        <div class="logo">
+          <img src="assets/images/hoodie_logo-removebg-preview.png" alt="" />
+        </div>
+        <div class="burgar" onclick="navToggle()">&#9776;</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="home.html">Home</a></li>
+          <li>
+            <a href="#about">About Us</a>
+            <!--dropdown items for About us-->
+            <ul class="dropdown">
+              <li><h1>Details</h1></li>
+              <li>Brand Stories</li>
+              <li>Our Mission</li>
+              <li>Our Vision</li>
+              <li>Testimonials</li>
+            </ul>
+          </li>
+          <!--end of dropdown items for About us -->
+
+          <li>
+            <a href="#shop">Shop</a>
+            <!--dropdown items for shop  -->
+            <div class="shop-box">
+              <div class="shop-content">
+                <div class="shop-row">
+                  <img
+                    src="assets/images/hoodie 2.webp"
+                    alt="Different colors of hoddie"
+                  />
+                </div>
+                <div class="shop-row">
+                  <div class="header">New Arrival</div>
+                  <ul class="shop-links">
+                    <li><a href="#">What's new</a></li>
+                    <li><a href="#">Men's Hoodies</a></li>
+                    <li><a href="#">Women's Hoodies</a></li>
+                    <li><a href="#">Kid's Hoodies</a></li>
+                  </ul>
+                </div>
+
+                <div class="shop-row">
+                  <div class="header">Clothings</div>
+                  <ul class="shop-links">
+                    <li><a href="#">Hoodies</a></li>
+                    <li><a href="#">Shorts</a></li>
+                    <li><a href="#">Jackets</a></li>
+                    <li><a href="#">Matching sets</a></li>
+                  </ul>
+                </div>
+
+                <div class="shop-row">
+                  <div class="header">Shop The Thrend</div>
+                  <ul class="shop-links">
+                    <li><a href="#">Red Collections</a></li>
+                    <li><a href="#">Joggers</a></li>
+                    <li><a href="#">Travel Clothes</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- end of dropdown items for shop list navbar -->
+
+          <li>
+            <a href="#sales">Sale</a>
+            <!--dropdown items for sales list navbar-->
+            <div class="sale-box">
+              <div class="sale-content">
+                <div class="sale-row">
+                  <img
+                    class="img1"
+                    src="assets/images/hoodie-discount4.jpeg"
+                    alt="hoddie-discount"
+                  />
+                </div>
+                <div class="sale-row">
+                  <div class="bold">Offer</div>
+                  <ul class="sale-links">
+                    <li><a href="#">Seasonal Sales</a></li>
+                    <li><a href="#">Flash Sales</a></li>
+                    <li><a href="#">Bundle Deal</a></li>
+                    <li><a href="#">Daily Deal</a></li>
+                  </ul>
+                </div>
+
+                <div class="sale-row">
+                  <div class="bold">Discounts</div>
+                  <ul class="sale-links">
+                    <li><a href="#">Regular Customer Discount</a></li>
+                    <li><a href="#">First Timer Discount</a></li>
+                    <li><a href="#">Referral Discount</a></li>
+                    <li><a href="#">Limited Time Offer</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!--dropdown items for sales list navbar-->
+          <li><a href="#footer">Contact Us</a></li>
+        </ul>
+        <div class="login">
+          <a href="#">Login</a>
+          <a href="#">Sign up</a>
+        </div>
+      </div>
+    </nav>
+    <!--end of nav bar section-->
+
+    <!--hero-section-->
+    <div class="hero">
+      <div class="overlay">
+        <h1>Discover Comfy Hoodies</h1>
+        <p>where premium comfort meets urban style.</p>
+        <a href="bridget">Shop Now</a>
+      </div>
+      <div class="images">
+        <img class="pic2" src="assets/images/hoodie-hero1.webp" alt="" />
+        <img class="pic1" src="assets/images/hoodie-hero2.webp" alt="" />
+        <img
+          class="pic1"
+          src="assets/images/hero-hoodie4.webp"
+          alt="lady on hoodie"
+        />
+      </div>
+    </div>
+    <!--end of hero section-->
+
+    <!--*** About section ***-->
+    <div id="about">
+      <div class="about-section">
+        <div class="about-content">
+          <div class="about-child">
+            <p>WE ARE MORE THAN ACTIVE WEAR BRAND</p>
+            <p>What We Stand For.</p>
+            <p>
+              Ensuring premium comfort and style, our meticulously crafted Comfy
+              Hoodies are designed to elevate your experience. We focus on
+              delivering unmatched quality, innovative designs, and a touch of
+              elegance in every piece.
+            </p>
+            <button class="accordion-button">Read More</button>
+            <div class="accordion-content">
+              <p>
+                We are committed to sustainability and ethical practices,
+                ensuring that every hoodie is made with high-quality materials
+                that is long-lasting. there’s a Comfy Hoodie for everyone.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-img">
+          <img src="assets/images/About-img1 (1).jpeg" alt="" />
+        </div>
+      </div>
+
+      <div class="about-content2">
+        <div class="security">
+          <i class="fa-solid fa-truck"></i>
+          <h2>Free shipping</h2>
+          <p>
+            Enjoy seamless shopping with our complimentary shipping service.
+          </p>
+        </div>
+
+        <div class="security">
+          <i class="fa-solid fa-shield-halved"></i>
+          <h2>Secure Payment</h2>
+          <p>
+            Experience worry-free transactions with our secure payment options.
+          </p>
+        </div>
+
+        <div class="security">
+          <i class="fa-solid fa-hand-holding-heart"></i>
+          <h2>Love to help you</h2>
+          <p>Our dedicated team is here to assist you every step of the way.</p>
+        </div>
+      </div>
+    </div>
+    <!---*** About section stop ***-->
+
+    <!--*** Shop section start ***-->
+    <div id="shop">
+      <h2><span>Shop</span> The Look</h2>
+      <div class="shop-grid">
+        <div class="shop-container">
+          <img src="assets/images/F-hoddie3.png" alt="female-hoodie" />
+          <div class="shop-content">
+            <p>Crop Hoddie</p>
+            <p>&#8358;3,000</p>
+            <p>&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+            <button class="shop-btn" data-modal="modal1">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="shop-container">
+          <img src="assets/images/set-hoddie3.png" alt="female-hoodie" />
+          <div class="shop-content">
+            <p>Longline Hoddie</p>
+            <p>&#8358;8,000</p>
+            <p>&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+            <button class="shop-btn" data-modal="modal2">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="shop-container">
+          <img src="assets/images/F-hoodie4.png" alt="female-hoodie" />
+          <div class="shop-content">
+            <p>Fitted Hoddie</p>
+            <p>&#8358;3,500</p>
+            <p>&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+            <button class="shop-btn" data-modal="modal3">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="shop-container">
+          <img src="assets/images/M-hoddie2.png" alt="female-hoodie" />
+          <div class="shop-content">
+            <p>Oversized Hoddie</p>
+            <p>&#8358;4,500</p>
+            <p>&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+            <button class="shop-btn" data-modal="modal4">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="shop-container">
+          <img
+            src="assets/images/hoodie-seller3-removebg-preview.png"
+            alt="male-hoodie"
+          />
+          <div class="shop-content">
+            <p>Pullover Hoddie</p>
+            <p>&#8358;7,500</p>
+            <p>&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+            <button class="shop-btn" data-modal="modal5">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="shop-container">
+          <img src="assets/images/M-hoddie4.png" alt="male-hoodie" />
+          <div class="shop-content">
+            <p>Sweetshirt Hoddie</p>
+            <p>&#8358;4,000</p>
+            <p>&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+            <button class="shop-btn" data-modal="modal6">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--*** Shop section stop ***-->
+
+    <!--*** Sales section start ***-->
+    <div id="sales">
+      <div class="sales-scrolling">
+        <p class="scrolling-sales-text">
+          <span>Flash Sale | 20% Off for 24 Hours</span>
+          <span>Flash Sale | 20% Off for 24 Hours</span>
+          <span>Flash Sale | 20% Off for 24 Hours</span>
+          <span>Flash Sale | 20% Off for 24 Hours</span>
+          <span>Flash Sale | 20% Off for 24 Hours</span>
+          <span>Flash Sale | 20% Off for 24 Hours</span>
+          <span>Flash Sale | 20% Off for 24 Hours</span>
+          <span>Flash Sale | 20% Off for 24 Hours</span>
+          <span>Flash Sale | 20% Off for 24 Hours</span>
+        </p>
+      </div>
+
+      <div class="carousel-container">
+        <div class="carousel" id="carousel">
+          <!--<img src="assets/images/hoodie-discount 2.jpeg" alt="sales-img2" />
+          <img src="assets/images/hoodie-sales3.jpeg" alt="sales-img4" />-->
+          <img src="assets/images/hoodie-sales2.avif" alt="sales-img2" />
+          <img src="assets/images/hoodie-sales6.webp" alt="sales-img" />
+          <img src="assets/images/hoodie-sales4.jpg" alt="sales-img3" />
+          <img src="assets/images/hoodie-discount 2.jpeg" alt="sales-img2" />
+        </div>
+        <button class="carousel-btn prev" onclick="prevSlide()">
+          &#10094;
+        </button>
+        <button class="carousel-btn next" onclick="nextSlide()">
+          &#10095;
+        </button>
+      </div>
+    </div>
+
+    <div class="news-letter">
+      <div class="news-content">
+        <h2>Sign Up for <span>Updates</span> <br />& Newsletter</h2>
+      </div>
+      <div class="news-form">
+        <input type="email" placeholder="subscribe@comfy.com" />
+        <button>Sign up</button>
+      </div>
+    </div>
+    <!--*** Sales section stop ***-->
+
+    <!--*** Footer section ***-->
+    <footer id="footer">
+      <footer class="footer-container">
+        <div class="footer-content">
+          <img
+            src="assets/images/hoodie_logo-removebg-preview.png"
+            alt="Favicon"
+          />
+          <div>
+            <p>
+              Comfy hoodie provide you super qualities hoodies. Our dedication
+              to detail and sxcellence ensure your satisfaction.
+            </p>
+            <i class="fa-brands fa-facebook-f"></i> &nbsp;<i
+              class="fa-brands fa-x-twitter"
+            ></i>
+            &nbsp;<i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+
+        <div class="footer-content">
+          <h2>Products</h2>
+          <p><a href="#">Men's hoodie</a></p>
+          <p><a href="#">Women's hoodie</a></p>
+          <p><a href="#">Jackets</a></p>
+          <p><a href="#">Joggers</a></p>
+          <p><a href="#">Matching set</a></p>
+        </div>
+
+        <div class="footer-content">
+          <h2>Help</h2>
+          <p><a href="#">About us</a></p>
+          <p><a href="#">FAQs</a></p>
+          <p><a href="#">Privacy policy</a></p>
+          <p><a href="#">Terms</a></p>
+          <p><a href="#">Payment policy</a></p>
+        </div>
+
+        <div class="footer-content">
+          <h2>Get in touch</h2>
+          <p><a href="#">custormer@comfy.com</a></p>
+          <p><a href="#">+23487569876</a></p>
+        </div>
+      </footer>
+
+      <footer class="footer-copyright">
+        <div class="copyright">
+          Copyright &copy; 2024 | All Right Reserved <br />
+          Developed by <span>Bridget Adeyemi</span>
+        </div>
+      </footer>
+    </footer>
+    <!--*** Footer section stop ***-->
+    <script src="./app.js"></script>
+  </body>
+</html>
