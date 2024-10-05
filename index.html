@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <!--font awesome link-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -11,12 +12,24 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!--font awesome link ends-->
+
+    <!--Google font link-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
+    <!--Google font link ends-->
+
+    <!--swiper cdn link-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!--swiper cdn link ends-->
+
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./mediaquaries.css" />
     <title>Comfrt Hoodies</title>
@@ -45,13 +58,16 @@
     <nav>
       <div class="wrapper">
         <div class="logo">
-          <img src="assets/images/hoodie_logo-removebg-preview.png" alt="" />
+          <img
+            src="assets/images/hoodie_logo-removebg-preview.png"
+            alt="comfy-logo"
+          />
         </div>
-        <div class="burgar" onclick="navToggle()">&#9776;</div>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="home.html">Home</a></li>
+        <!--<div class="burgar" onclick="navToggle()">&#9776;</div>-->
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
           <li>
-            <a href="#about">About Us</a>
+            <a href="#about">About</a>
             <!--dropdown items for About us-->
             <ul class="dropdown">
               <li><h1>Details</h1></li>
@@ -142,19 +158,87 @@
               </div>
             </div>
           </li>
-          <!--dropdown items for sales list navbar-->
-          <li><a href="#footer">Contact Us</a></li>
+          <!--dropdown items for sales end-->
+          <li><a href="#review">Review</a></li>
+          <li><a href="#footer">Contact</a></li>
         </ul>
-        <div class="login">
-          <a href="#">Login</a>
-          <a href="#">Sign up</a>
+        <!--*** Nav bar list ends -->
+
+        <!--*** Nav bar Icons ***-->
+        <div class="nav-icons">
+          <div class="fas fa-search" id="search-btn"></div>
+          <div class="fas fa-shopping-cart" id="cart-btn"></div>
+          <div class="fas fa-user" id="login-btn"></div>
+          <div class="fas fa-bars" id="menu-btn"></div>
         </div>
+        <!--*** Nav bar Icons ends ***-->
+
+        <!--*** search box for serach icon start ***-->
+        <form action="" class="search-form">
+          <input type="search" id="search-box" placeholder="search here..." />
+          <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <!--*** search box for serach icon ends ***-->
+
+        <!--*** shopping cart item list for shopping-cart icon ***-->
+        <div class="shopping-cart">
+          <div class="box">
+            <i class="fas fa-trash"></i>
+            <img
+              src="assets/images/hoodie-seller6-removebg-preview.png"
+              alt=""
+            />
+            <div class="shopping-content">
+              <h3>Crop Hoddie</h3>
+              <span class="price">$5</span>
+              <span class="qantity">gty : 1</span>
+            </div>
+          </div>
+
+          <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src=" assets/images/M-hoddie3.png" alt="" />
+            <div class="shopping-content">
+              <h3>Sweat shirt</h3>
+              <span class="price">$5</span>
+              <span class="qantity">gty : 1</span>
+            </div>
+          </div>
+
+          <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="assets/images/set-hoddie3.png" alt="" />
+            <div class="shopping-content">
+              <h3>Longline</h3>
+              <span class="price">$5</span>
+              <span class="qantity">gty : 1</span>
+            </div>
+          </div>
+          <div class="total">Total :$19.50</div>
+          <a href="#" class="checkout-btn">Checkout</a>
+        </div>
+        <!--*** shopping cart item list ends ***-->
+
+        <!--*** Login form starts for user icon ***-->
+        <form action="" class="login-form">
+          <h3>Login now</h3>
+          <input type="email" placeholder="Your email" class="input-mail" />
+          <input
+            type="password"
+            placeholder="Your password"
+            class="input-mail"
+          />
+          <p>forgot your password? <a href="#">Click here</a></p>
+          <p>Don't have an account? <a href="#">Create now</a></p>
+
+          <button type="submit">Login now</button>
+        </form>
       </div>
     </nav>
     <!--end of nav bar section-->
 
     <!--hero-section-->
-    <div class="hero">
+    <div class="hero" id="home">
       <div class="overlay">
         <h1>Discover Comfy Hoodies</h1>
         <p>where premium comfort meets urban style.</p>
@@ -162,7 +246,9 @@
       </div>
       <div class="images">
         <img class="pic2" src="assets/images/hoodie-hero1.webp" alt="" />
+
         <img class="pic1" src="assets/images/hoodie-hero2.webp" alt="" />
+
         <img
           class="pic1"
           src="assets/images/hero-hoodie4.webp"
@@ -342,6 +428,90 @@
     </div>
     <!--*** Sales section stop ***-->
 
+    <!--*** Review section starts ***-->
+
+    <div class="review" id="review">
+      <h1>Customer's <span>review</span></h1>
+
+      <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slider-box">
+            <img src="assets/images/hoodie-review-img1.jpeg" alt="" />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
+              eveniet ea repudiandae optio? Sunt quibusdam beatae obcaecati quae
+              vero dolores amet vel, quod ea labore commodi necessitatibus
+              excepturi sapiente at.
+            </p>
+            <h3>Joy Smith</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-st ar"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide slider-box">
+            <img src="assets/images/hoodie-review-img5.jpeg" alt="" />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
+              eveniet ea repudiandae optio? Sunt quibusdam beatae obcaecati quae
+              vero dolores amet vel, quod ea labore commodi necessitatibus
+              excepturi sapiente at.
+            </p>
+            <h3>John deo</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide slider-box">
+            <img src="assets/images/hoodie-review-img3.jpeg" alt="" />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
+              eveniet ea repudiandae optio? Sunt quibusdam beatae obcaecati quae
+              vero dolores amet vel, quod ea labore commodi necessitatibus
+              excepturi sapiente at.
+            </p>
+            <h3>Ruby tech</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide slider-box">
+            <img src="assets/images/hoodie-review-img4.jpeg" alt="" />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
+              eveniet ea repudiandae optio? Sunt quibusdam beatae obcaecati quae
+              vero dolores amet vel, quod ea labore commodi necessitatibus
+              excepturi sapiente at.
+            </p>
+            <h3>Adam deo</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--*** Review section ends ***-->
+
     <!--*** Footer section ***-->
     <footer id="footer">
       <footer class="footer-container">
@@ -395,6 +565,10 @@
       </footer>
     </footer>
     <!--*** Footer section stop ***-->
+
+    <!--*** swiper js link ***-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--*** Custom js file link ***-->
     <script src="./app.js"></script>
   </body>
 </html>

@@ -1,7 +1,47 @@
-function navToggle() {
-  const navLinks = document.getElementById("navLinks");
-  navLinks.classList.toggle("active");
-}
+/***  navbar starts ***/
+let searchForm = document.querySelector(".search-form");
+let searchBtn = document.querySelector("#search-btn");
+searchBtn.addEventListener("click", function () {
+  searchForm.classList.toggle("visible");
+  shoppingCart.classList.remove("visible");
+  formLogin.classList.remove("visible");
+  navLink.classList.remove("visible");
+});
+
+let shoppingCart = document.querySelector(".shopping-cart");
+let cartBtn = document.querySelector("#cart-btn");
+cartBtn.addEventListener("click", function () {
+  shoppingCart.classList.toggle("visible");
+  searchForm.classList.remove("visible");
+  formLogin.classList.remove("visible");
+  navLink.classList.remove("visible");
+});
+
+let formLogin = document.querySelector(".login-form");
+let loginBtn = document.querySelector("#login-btn");
+loginBtn.addEventListener("click", function () {
+  formLogin.classList.toggle("visible");
+  searchForm.classList.remove("visible");
+  shoppingCart.classList.remove("visible");
+  navLink.classList.remove("visible");
+});
+
+let navLink = document.querySelector(".nav-links");
+let menuBtn = document.querySelector("#menu-btn");
+menuBtn.addEventListener("click", function () {
+  navLink.classList.toggle("visible");
+  searchForm.classList.remove("visible");
+  shoppingCart.classList.remove("visible");
+  formLogin.classList.remove("visible");
+});
+
+window.addEventListener("scroll", function () {
+  searchForm.classList.remove("visible");
+  shoppingCart.classList.remove("visible");
+  formLogin.classList.remove("visible");
+  navLink.classList.remove("visible");
+});
+/*** navbar ends ***/
 
 /****Scrolling text start *****/
 const scrollingText = document.querySelector(".scrolling-sales-text");
@@ -64,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 /****Carousel functionality stop *****/
 
-// Accordion functionality start
+/*** Accordion functionality start ***/
 const accordionButtons = document.querySelectorAll(".accordion-button");
 
 accordionButtons.forEach((button) => {
@@ -85,3 +125,27 @@ accordionButtons.forEach((button) => {
     this.classList.toggle("active");
   });
 });
+/*** Accordion functionality ends ***/
+
+/*** review slider section ***/
+let swiper = new Swiper(".review-slider", {
+  loop: true,
+  spaceBetween: 20,
+  autoplay: {
+    delay: 7000,
+    disableOnInteraction: false,
+  },
+  centeredSlides: true,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1020: {
+      slidesPerView: 3,
+    },
+  },
+});
+/*** review slider section ends ***/
